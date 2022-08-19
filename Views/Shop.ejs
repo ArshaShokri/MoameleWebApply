@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+    <title>Moamele - Products</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../files/SmallHead.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="ArshaShokri">
+</head>
+
+<body>
+    <section id="productsSection">
+        <div class="resourceProduct">
+            <h1 class="resourcesTitle">همه محصولات</h1>
+        </div>
+        <% products.forEach(product=> { %>
+            <div class="product-box">
+                <h1>
+                    <%= product.name %>
+                </h1>
+                <h3>
+                    <%= product.shortdescription %>
+                </h3>
+                <h2>قیمت: <%= product.price %>
+                </h2>
+                <button class="buy"><a href="/product/<%= product._id %>">خرید</a></button>
+            </div>
+            <% }) %>
+    </section>
+</body>
+
+</html>

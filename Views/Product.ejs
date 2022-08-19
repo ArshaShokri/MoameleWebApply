@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+    <title>Moamele - <%= product.name %>
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="icon" type="image/x-icon" href="../files/SmallHead.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="ArshaShokri">
+</head>
+
+<body>
+    <section id="product">
+        <div class="card">
+            <div id="productDes">
+                <div id="productInfo">
+                    <h1>
+                        <%= product.name %>
+                    </h1>
+                    <hr>
+                    <p>
+                        <%= product.description %>
+                    </p>
+                </div>
+                <div id="productHesab">
+                    <h2>قیمت</h2>
+                    <h2 id="price">
+                        <%= product.price %>
+                    </h2>
+                    <h2 id="price" style="font-size: 25px;">تومان</h2>
+                    <button id="productConfirm">
+                        <a href="#" style="padding: 0px 50px;">ثبت سفارش</a>
+                    </button>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
