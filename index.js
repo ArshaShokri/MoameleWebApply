@@ -26,7 +26,7 @@ app.post('/add', ProductController.addProduct);
 app.post('/login', AuthController.Login);
 app.post('/register', AuthController.Register);
 
-mongoose.connect('mongodb+srv://FChatDB:ARSHAshokri8899@fchatdb.1zcr1ck.mongodb.net/moamele', { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
+mongoose.connect('', { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
     if (err) {
         console.log(err);
     } else {
